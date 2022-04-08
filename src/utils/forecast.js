@@ -11,8 +11,7 @@ const forecast = (lat,long, callback) => {
             callback('Unable to find given coordinates', undefined)
         } else {
             callback(undefined, {
-                temp: body.main.temp,
-                feelLike: body.main.feels_like,                      
+                weather : body.main                       
              
             })
         }
